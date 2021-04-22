@@ -45,7 +45,7 @@ public class MultiSpinnerSearch extends AppCompatSpinner implements OnCancelList
 	private String defaultText = "";
 	private String spinnerTitle = "";
 	private String emptyTitle = "Not Found!";
-	private String searchHint = "Type to Alexander";
+	private String searchHint = "Type to Search";
 	private String clearText = "Clear All";
 	private boolean colorSeparation = false;
 
@@ -277,6 +277,16 @@ public class MultiSpinnerSearch extends AppCompatSpinner implements OnCancelList
 
 	public void setItems(List<KeyPairBoolData> items, MultiSpinnerListener listener) {
 
+		if(items.size() > 0)
+		{
+			if(items.get(0).isSelected())
+			{
+				for (int i=1; i<items.size(); i++)
+				{
+					items.get(i).setSelected(false);
+				}
+			}
+		}
 		this.items = items;
 		this.listener = listener;
 
