@@ -399,6 +399,7 @@ public class MultiSpinnerSearch extends AppCompatSpinner implements OnCancelList
 					{
 						arrayList.get(x).setSelected(false);
 					}
+					arrayList.get(position).setSelected(true);
 					data.setSelected(true);
 				}
 				else
