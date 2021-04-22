@@ -393,7 +393,7 @@ public class MultiSpinnerSearch extends AppCompatSpinner implements OnCancelList
 			holder.checkBox.setChecked(data.isSelected());
 
 			convertView.setOnClickListener(v -> {
-				if(data.isSelected() && data.getId() == 0)
+				if(data.isSelected() == false && data.getId() == 0)
 				{
 					for(int x = 0; x<arrayList.size(); x++)
 					{
