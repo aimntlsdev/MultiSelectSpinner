@@ -152,6 +152,17 @@ public class MultiSpinnerSearch extends AppCompatSpinner implements OnCancelList
 
 		StringBuilder spinnerBuffer = new StringBuilder();
 
+		if(items.size() > 0)
+		{
+			if(items.get(0).isSelected())
+			{
+				for (int i=1; i<items.size(); i++)
+				{
+					items.get(i).setSelected(false);
+				}
+			}
+		}
+
 		ArrayList<KeyPairBoolData> selectedData = new ArrayList<>();
 		for (int i = 0; i < items.size(); i++) {
 			KeyPairBoolData currentData = items.get(i);
