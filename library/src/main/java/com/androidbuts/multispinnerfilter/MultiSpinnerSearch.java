@@ -45,7 +45,7 @@ public class MultiSpinnerSearch extends AppCompatSpinner implements OnCancelList
 	private String defaultText = "";
 	private String spinnerTitle = "";
 	private String emptyTitle = "Not Found!";
-	private String searchHint = "Type to search";
+	private String searchHint = "Type to Alexander";
 	private String clearText = "Clear All";
 	private boolean colorSeparation = false;
 
