@@ -37,5 +37,6 @@ dependencies {
 
     //    implementation 'com.github.pratikbutani:MultiSelectSpinner:f47c0dadea'
 //    implementation project(':library')
-    implementation 'com.github.pratikbutani:MultiSelectSpinner:1.0.1'
+    //implementation 'com.github.pratikbutani:MultiSelectSpinner:1.0.1'
+    implementation 'com.github.aimntlsdev:MultiSelectSpinner:1.0.2'
 }

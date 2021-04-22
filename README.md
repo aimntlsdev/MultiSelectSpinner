@@ -21,7 +21,7 @@ Click to see video of example:
 
 ### Add dependency in build.gradle
 
-    implementation 'com.github.pratikbutani:MultiSelectSpinner:1.0.1'
+    implementation 'com.github.aimntlsdev:MultiSelectSpinner:1.0.2'
 
 ### Recent Changes
 
